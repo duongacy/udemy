@@ -1,0 +1,42 @@
+#introduce{
+    padding: 8rem 0;
+    background-size: cover;
+    .title{
+        font-weight: 500;
+    }
+    .describe{
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    .form-search{
+        border-radius: .15rem;
+        overflow: hidden;
+        input,button{
+            border: none;
+            font-size: 1rem;
+            padding: .7rem 1.4rem;
+            &:focus{
+                outline: none;
+            }
+        }
+        input{
+            flex: auto;
+        }
+        button{
+            color: $red-color;
+            background-color: $white-color;
+            &:hover{
+                background-color: $red-color;
+                color: $white-color;
+            }
+        }
+    }
+}
+
+#figures{
+    .content{
+        width: fit-content;
+        text-align: center;
+    }
+    
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Udemy</title>
+
+        <link rel="stylesheet" href="./lib/bootstrap-5.0.1-dist/css/bootstrap.min.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./main.css" />
+    </head>
+    <body>
+        <div class="container p-5">
+            <button class="button m-2">Default button</button>
+            <button class="button button-lg m-2">Large button</button>
+            <button class="button button-white m-2">White button</button>
+            <button class="button button-red-bold m-2">Red button</button>
+
+            <button class="button button-red-bold button-lg m-2">
+                Common button
+            </button>
+            <button class="button button-white button-lg m-2">
+                Large button
+            </button>
+            <button class="button button-primary button-lg m-2">
+                Primary button
+            </button>
+            <button class="button button-white button-sm m-2">
+                Small button
+            </button>
+            <button class="button-circle m-2">
+                <i class="fab fa-opencart"></i>
+            </button>
+            <button class="button-circle button-circle-lg button-gray m-2">
+                <i class="fab fa-opencart"></i>
+            </button>
+            <div id="cart">
+                <button class="button-circle button-circle-xl button-gray m-2" >
+                <i class="fab fa-opencart"></i>
+                <div class="cart-info">
+                    <span class="arrow"></span>
+                    <span class="transparent"></span>
+                    ahihi do ngoc
+                </div>
+            </button>
+            </div>
+            
+            <button class="button-circle button-circle-xl m-2">
+                <img class="w-100" src="./images/22869844_edad.jpg" alt="" />
+            </button>
+            
+            <form action="" class="m-2">
+                <div class="search-group">
+                    <input type="text" placeholder="Text here" />
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <form action="" class="m-2">
+                <div class="search-group search-group-lg">
+                    <input type="text" placeholder="Text here" />
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <form action="" class="m-2">
+                <div
+                    class="
+                        search-group search-group-lg search-group-muted-white
+                        rounded-5
+                    "
+                >
+                    <input type="text" placeholder="Text here" />
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+
+            <div class="badge-accented m-2">BESTSELLER <span></span></div>
+
+            
+        </div>
+        <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script>
+            const exampleEl = document.getElementById('example');
+            console.log(exampleEl.offsetTop);
+            
+            const popover = new bootstrap.Popover(exampleEl,{
+                container: "body",
+                html:true,
+                customClass : "cart-popover",
+                // placement: 'right-start'
+            });
+            popover.show();
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Udemy</title>
+
+        <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap-5.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./main.css" />
+    </head>
+    <body>
+        <div id="overlay--mobile-show"></div>
+        <header id="header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid main-menu">
+                    <button class="navbar-toggler" id="toggle-button">
+                        <em></em>
+                        <em></em>
+                        <em></em>
+                    </button>
+                    <div>
+                        <a class="navbar-brand" href="#">
+                            <img
+                                src="./images/logo-coral.svg"
+                                height="32px"
+                                alt=""
+                            />
+                        </a>
+                        <button class="category-button d-none d-lg-inline">
+                            <i class="fas fa-th"></i> Categories
+                        </button>
+                    </div>
+
+                    <form class="search-form d-none d-lg-flex">
+                        <input
+                            class="search-input"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                        />
+                        <button class="search-button" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <div>
+                        <a class="cart-button me-2" href=""
+                            ><i class="fab fa-opencart"></i
+                        ></a>
+                        <button class="white-button d-none d-lg-inline me-2">
+                            Log in
+                        </button>
+                        <button class="red-button d-none d-lg-inline">
+                            Sign up
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="menu-custom menu-2 d-flex" id="menu-2">
+                <div class="menu-2-wrap" id="menu-2-wrap">
+                    <div class="menu-2-1" id="menu-2-1">
+                        <div class="nav-link signup-login">
+                            <a href="#"> Signup </a> <span>/</span>
+                            <a href="#"> Login </a>
+
+                            <hr class="divider-2" />
+                            <hr class="divider-1" />
+                        </div>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <p class="nav-link main-link disabled">
+                                    <i class="fas fa-chart-line"></i> MOST
+                                    POPULAR
+                                </p>
+                            </li>
+
+                            <span id="append-menu-1"></span>
+
+                            <!-- <li class="nav-item">
+                                <a
+                                    class="
+                                        nav-link
+                                        show-menu-2
+                                        text-dark
+                                        fw-bold
+                                    "
+                                    show="all-categorites"
+                                    href="#"
+                                    >All categorites
+                                    <span class="ms-auto"
+                                        ><i
+                                            class="fas fa-chevron-right"
+                                        ></i></span
+                                ></a>
+                            </li> -->
+                            <li class="nav-link">
+                                <hr class="divider-1" />
+                            </li>
+                            <li class="nav-item">
+                                <p class="nav-link main-link disabled">
+                                    MORE FROM UDEMY
+                                </p>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Teach on Udemy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"
+                                    >Udemy for Business</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Get the app</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-2-2" id="menu-2-2">
+                        <!-- <div class="menu-2-2__item" id="all-categorites">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active show-menu-1 py-4"
+                                        href="#"
+                                        ><span class="me-3"
+                                            ><i class="fas fa-chevron-left"></i
+                                        ></span>
+                                        Menu
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link show-menu-3"
+                                        href="#"
+                                        show="development-3"
+                                        ><span
+                                            ><i
+                                                class="
+                                                    fab
+                                                    fa-connectdevelop
+                                                    icon
+                                                "
+                                            ></i
+                                            >Development
+                                        </span>
+                                        <span class="ms-auto"
+                                            ><i
+                                                class="fas fa-chevron-right"
+                                            ></i></span
+                                    ></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link show-menu-3" href="#"
+                                        ><span
+                                            ><i
+                                                class="far fa-chart-bar icon"
+                                            ></i
+                                            >Business</span
+                                        ><span class="ms-auto"
+                                            ><i
+                                                class="fas fa-chevron-right"
+                                            ></i></span
+                                    ></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link show-menu-3" href="#">
+                                        <span
+                                            ><i
+                                                class="fas fa-calculator icon"
+                                            ></i
+                                            >Finance & Accounting</span
+                                        ><span class="ms-auto"
+                                            ><i class="fas fa-chevron-right"></i
+                                        ></span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link show-menu-3" href="#"
+                                        ><span
+                                            ><i
+                                                class="fab fa-uncharted icon"
+                                            ></i
+                                            >IT & Software</span
+                                        ><span class="ms-auto"
+                                            ><i class="fas fa-chevron-right"></i
+                                        ></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link show-menu-3" href="#">
+                                        <span
+                                            ><i
+                                                class="
+                                                    fab
+                                                    fa-buromobelexperte
+                                                    icon
+                                                "
+                                            ></i
+                                            >Office Productivity</span
+                                        ><span class="ms-auto"
+                                            ><i class="fas fa-chevron-right"></i
+                                        ></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link show-menu-3" href="#">
+                                        <span
+                                            ><i
+                                                class="far fa-file-code icon"
+                                            ></i
+                                            >Personal Development</span
+                                        ><span class="ms-auto"
+                                            ><i class="fas fa-chevron-right"></i
+                                        ></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link show-menu-3" href="#"
+                                        ><span
+                                            ><i class="fas fa-pen-nib icon"></i
+                                            >Design</span
+                                        ><span class="ms-auto"
+                                            ><i class="fas fa-chevron-right"></i
+                                        ></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        ><span
+                                            ><i class="fas fa-bullseye icon"></i
+                                            >Marketing</span
+                                        ><span class="ms-auto"
+                                            ><i class="fas fa-chevron-right"></i
+                                        ></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link show-menu-3" href="#"
+                                        ><span
+                                            ><i
+                                                class="
+                                                    fas
+                                                    fa-hand-holding-water
+                                                    icon
+                                                "
+                                            ></i
+                                            >Lifestyle</span
+                                        ><span class="ms-auto"
+                                            ><i class="fas fa-chevron-right"></i
+                                        ></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link show-menu-3" href="#"
+                                        ><span
+                                            ><i
+                                                class="fas fa-camera-retro icon"
+                                            ></i
+                                            >Photography</span
+                                        ><span class="ms-auto"
+                                            ><i class="fas fa-chevron-right"></i
+                                        ></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link show-menu-3" href="#"
+                                        ><span
+                                            ><i
+                                                class="fas fa-procedures icon"
+                                            ></i
+                                            >Health & Fitness</span
+                                        ><span class="ms-auto"
+                                            ><i class="fas fa-chevron-right"></i
+                                        ></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link show-menu-3" href="#"
+                                        ><span
+                                            ><i class="fas fa-music icon"></i
+                                            >Music</span
+                                        ><span class="ms-auto"
+                                            ><i class="fas fa-chevron-right"></i
+                                        ></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link show-menu-3" href="#"
+                                        ><span
+                                            ><i
+                                                class="
+                                                    fas
+                                                    fa-chalkboard-teacher
+                                                    icon
+                                                "
+                                            ></i
+                                            >Teaching & Academics</span
+                                        ><span class="ms-auto"
+                                            ><i class="fas fa-chevron-right"></i
+                                        ></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> -->
+                    </div>
+
+                    <div class="menu-2-3" id="menu-2-3">
+                        <!-- <div class="menu-2-3__item" id="development-3">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link show-menu-1 active py-4"
+                                        hide="all-categorites"
+                                        href="#"
+                                        ><span class="me-3"
+                                            ><i class="fas fa-chevron-left"></i
+                                        ></span>
+                                        Menu
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="
+                                            nav-link
+                                            py-3
+                                            show-menu-2
+                                            align-items-center
+                                        "
+                                        hide=""
+                                        href="#"
+                                    >
+                                        <i
+                                            class="
+                                                fas
+                                                fa-chevron-left
+                                                lh-4
+                                                me-2
+                                            "
+                                        ></i>
+                                        <i
+                                            class="
+                                                fab
+                                                fa-connectdevelop
+                                                fs-3
+                                                me-2
+                                            "
+                                        ></i>
+                                        Development
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#"
+                                        >All Development
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >Web Development
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >Data Science
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >Mobile Apps
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >Programming Languages
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >Game Development
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Databases </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >Software Testing
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >Software Engineering
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >Development Tools
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">E-Commerce </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-2-3__item" id="business-3">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link show-menu-1 active py-4"
+                                        hide="all-categorites"
+                                        href="#"
+                                        ><span class="me-3"
+                                            ><i class="fas fa-chevron-left"></i
+                                        ></span>
+                                        Menu
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="
+                                            nav-link
+                                            py-3
+                                            show-menu-2
+                                            align-items-center
+                                        "
+                                        hide=""
+                                        href="#"
+                                    >
+                                        <i
+                                            class="
+                                                fas
+                                                fa-chevron-left
+                                                lh-4
+                                                me-2
+                                            "
+                                        ></i>
+                                        <i
+                                            class="
+                                                fab
+                                                fa-connectdevelop
+                                                fs-3
+                                                me-2
+                                            "
+                                        ></i>
+
+                                        Business
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#"
+                                        >All Business
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Finance </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >Entrepreneurship
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >Communications
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Management </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sales </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Strategy </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Operations </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >Project Management
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- <section
+            style="
+                background-image: url('./images/f9cd7c14-72c2-48a4-908f-917ec4d2150f.jpg');
+            "
+            id="introduce"
+        >
+            <div class="container text-white">
+                <div class="row">
+                    <div class="col-md-9 col-xl-6">
+                        <p class="display-4 title">Learn on your schedule</p>
+                        <p class="describe">
+                            Study any topic, anytime. Choose from thousands of
+                            expert-led courses now.
+                        </p>
+                        <form class="d-flex form-search">
+                            <input type="text" />
+                            <button><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="figures" id="figures">
+            <div class="container d-flex flex-sm-column justify-content-between ">
+                <div class="text-center">
+                    <p class="h6">100,000 online courses</p>
+                    <p>Explore a variety of fresh topics</p>
+                </div>
+                <div class="text-center">
+                    <p class="h6">100,000 online courses</p>
+                    <p>Explore a variety of fresh topics</p>
+                </div>
+                <div class="text-center">
+                    <p class="h6">100,000 online courses</p>
+                    <p>Explore a variety of fresh topics</p>
+                </div>
+            </div>
+        </section> -->
+
+        <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/menu.js"></script>
+    </body>
+</html>
