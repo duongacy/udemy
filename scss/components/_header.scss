@@ -24,39 +24,6 @@
         }
     }
 
-    .search-form {
-        border-radius: 0.15rem;
-        flex: auto;
-        display: flex;
-        border: $gray-light-color solid 1px;
-        background-color: $gray-light-color;
-        overflow: hidden;
-        .search-input {
-            flex: auto;
-            border: none;
-            border-radius: 0;
-            outline: none;
-            background-color: transparent;
-            padding: 0.6rem 1rem;
-            font-size: 0.8rem;
-            &:focus,
-            &:focus + .search-button {
-                background-color: $white-color;
-            }
-        }
-        .search-button {
-            border: none;
-            border-radius: 0;
-            background-color: transparent;
-            color: $red-color;
-            padding: 0.5rem 1rem;
-            font-size: 0.8rem;
-            &:hover {
-                background-color: $red-color;
-                color: $white-color;
-            }
-        }
-    }
 
     .menu-custom {
         &.menu-2{
