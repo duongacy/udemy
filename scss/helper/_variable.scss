@@ -1,6 +1,40 @@
-$dark-color : #202124;
+$primary: #007891;
 
-$gray-color: #686F7A;
-$gray-light-color: #F2F3F5;
-$white-color : #fff;
-$red-color: #EC5352;
+$secondary: #686f7a;
+
+$danger: #ec5352;
+$red-bold: #992337;
+
+$dark: #505764;
+
+$muted: #e8e8e8;
+$light: #f2f3f5;
+
+$white: #fff;
+
+// font-size
+$font-size-base: 1rem;
+
+$fs-1: $font-size-base * 2.5;
+$fs-2: $font-size-base * 2;
+$fs-3: $font-size-base * 1.5;
+$fs-4: $font-size-base * 1.25;
+$fs-5: $font-size-base;
+$fs-6: $font-size-base * 0.875;
+// ============
+
+// font weight
+$fw-1: 300;
+$fw-2: 400;
+$fw-3: 500;
+$fw-4: 600;
+$fw-5: 700;
+//
+
+// leter spacing
+$letter-spacing-base: 0.0625rem;
+$lsp-1: $letter-spacing-base * 1;
+$lsp-2: $letter-spacing-base * 2;
+$lsp-3: $letter-spacing-base * 3;
+$lsp-4: $letter-spacing-base * 4;
+$lsp-5: $letter-spacing-base * 5;

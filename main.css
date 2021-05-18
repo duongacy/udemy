@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  height: 2rem;
+  padding: 0 0.875rem;
+  border: #686f7a solid 1px;
+  border-radius: 0.2rem;
+  font-size: 0.875rem;
+  background-color: #fff;
+  color: #686f7a;
+  outline: none;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.button-sm {
+  height: 1.25rem;
+  padding: 0 0.5rem;
+  font-size: .5rem;
+}
+
+.button-lg {
+  height: 2.5rem;
+  padding: 0 1.25rem;
+  font-size: 1.25rem;
+}
+
+.button-red-bold {
+  color: #fff;
+  background-color: red;
+  border-color: transparent;
+}
+
+.button-red-bold:hover {
+  background-color: #992337;
+}
+
+.button-secondary {
+  color: #686f7a;
+}
+
+.button-secondary:hover {
+  color: #505764;
+}
+
+.button-circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 0.875rem;
+  border: transparent solid .0625rem;
+  background-color: transparent;
+  color: #686f7a;
+  transition: all .5s;
+}
+
+.button-circle:hover {
+  border-color: #e8e8e8;
+  background-color: #f2f3f5;
+}
+
+.overlay--mobile-show {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(80, 87, 100, 0.1);
+}
+
+#header .main-menu {
+  gap: 2rem;
+}
+
+#header .navbar-toggler {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+#header .navbar-toggler em {
+  display: block;
+  height: .1875rem;
+  margin: .1875rem;
+  width: 1.25rem;
+  background-color: #686f7a;
+}
+
+#header .menu-custom {
+  transition: .5s;
+}
+
+#header .menu-custom.menu-2 {
+  position: absolute;
+  top: 0;
+  left: -15rem;
+  width: 15rem;
+  min-height: 100vh;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+#header .menu-custom .menu-2-wrap {
+  display: flex;
+  transition: all .5s;
+}
+
+#header .menu-custom .menu-2-1, #header .menu-custom .menu-2-2, #header .menu-custom .menu-2-3 {
+  width: 15rem;
+  min-height: 100vh;
+  padding-bottom: 4rem;
+  background-color: absolute;
+  overflow-y: auto;
+}
+
+#header .menu-custom .menu-2-2__item, #header .menu-custom .menu-2-3__item {
+  display: none;
+}
+
+#header .menu-custom hr.divider-1 {
+  height: .0625rem;
+  margin: 0.5rem 0;
+}
+
+#header .menu-custom hr.divider-2 {
+  height: .125rem;
+  margin: 0.5rem 0;
+}
+
+#header .menu-custom .signup-login a, #header .menu-custom .signup-login span {
+  font-weight: 700;
+  color: #007891;
+  text-decoration: none;
+}
+
+#header .menu-custom .main-link {
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.1875rem;
+  margin: 0;
+}
+
+#header .menu-custom a.nav-link {
+  display: flex;
+  color: #686f7a;
+  font-size: 1rem;
+}
+
+#header .menu-custom a.nav-link:hover, #header .menu-custom a.nav-link.active {
+  background-color: #f2f3f5;
+  opacity: .8;
+}
+
+#header .menu-custom a.nav-link .icon {
+  width: 1.5rem;
+}

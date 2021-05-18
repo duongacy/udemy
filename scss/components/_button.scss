@@ -1,0 +1,54 @@
+.button {
+    height: 2rem;
+    padding: 0 0.875rem;
+    border: $secondary solid 1px;
+    border-radius: 0.2rem;
+    font-size: $fs-6;
+    background-color: $white;
+    color: $secondary;
+    outline: none;
+    cursor: pointer;
+    transition: all .5s;
+}
+.button-sm {
+    height: 1.25rem;
+    padding: 0 0.5rem;
+    font-size: .5rem;
+}
+.button-lg {
+    height: 2.5rem;
+    padding: 0 1.25rem;
+    font-size: 1.25rem;
+}
+
+.button-red-bold {
+    color: $white;
+    background-color: red;
+    border-color: transparent;
+
+    &:hover {
+        background-color: $red-bold;
+    }
+}
+
+.button-secondary {
+    color: $secondary;
+    &:hover {
+        color: $dark;
+    }
+}
+
+.button-circle{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font-size: $fs-6;
+    border: transparent solid .0625rem;
+    background-color: transparent;
+    color: $secondary;
+    transition: all .5s;
+    &:hover{
+        border-color: $muted;
+        background-color: $light;
+    }
+}
