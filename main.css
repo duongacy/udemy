@@ -47,6 +47,16 @@
   color: #505764;
 }
 
+.button-white {
+  color: #686f7a;
+  border-color: #686f7a;
+}
+
+.button-white:hover {
+  color: #505764;
+  border-color: #505764;
+}
+
 .button-circle {
   width: 2rem;
   height: 2rem;

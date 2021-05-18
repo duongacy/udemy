@@ -38,6 +38,14 @@
     }
 }
 
+.button-white{
+    color: $secondary ;
+    border-color: $secondary;
+    &:hover{
+        color: $dark;
+        border-color: $dark;
+    }
+}
 .button-circle{
     width: 2rem;
     height: 2rem;
@@ -52,3 +60,5 @@
         background-color: $light;
     }
 }
+
+// 
