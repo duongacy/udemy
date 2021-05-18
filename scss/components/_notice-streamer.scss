@@ -1,0 +1,31 @@
+.notice-streamer {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: $white;
+    .notice-streamer__top {
+        padding: 7rem 0;
+        // background-image: linear-gradient(to right, #751d51, #e65052);
+    }
+    .notice-streamer__bottom {
+        padding: 1rem 0;
+        background-image: linear-gradient(to right, #751d51, #e65052);
+    }
+
+    .notice-streamer__item{
+        display: flex;
+        gap: 1rem;
+        .item__content{
+            // flex: auto;
+        }
+        h6{
+            font-size: $fs-4;
+        }
+        p{
+            font-size: $fs-6;
+            margin: 0;
+        }
+    }
+}

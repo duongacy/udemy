@@ -300,3 +300,35 @@
   color: #505764;
   cursor: pointer;
 }
+
+.notice-streamer {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+}
+
+.notice-streamer .notice-streamer__top {
+  padding: 7rem 0;
+}
+
+.notice-streamer .notice-streamer__bottom {
+  padding: 1rem 0;
+  background-image: linear-gradient(to right, #751d51, #e65052);
+}
+
+.notice-streamer .notice-streamer__item {
+  display: flex;
+  gap: 1rem;
+}
+
+.notice-streamer .notice-streamer__item h6 {
+  font-size: 1.25rem;
+}
+
+.notice-streamer .notice-streamer__item p {
+  font-size: 0.875rem;
+  margin: 0;
+}
