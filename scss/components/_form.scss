@@ -1,0 +1,95 @@
+.udemy-form-control{
+    border: none;
+    display: flex;
+    border-radius: .1rem;
+    overflow: hidden;
+    background-color: $white;
+    input, button{
+        height: 2.5rem;
+        padding: 0 1rem;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    input{
+        flex: auto;
+    }
+    button{
+        color: $danger;
+        &:hover{
+            background-color: $danger !important;
+            color: $white !important;
+        }
+    }
+}
+
+.udemy-form-control--lg{
+    input, button{
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+    
+}
+
+.udemy-form-control--light{
+    background-color: $light;
+    border: $light solid 1px;
+    input:focus{
+        background-color: $white;
+        &+button{
+            background-color: $white;
+            color: $danger;
+        }
+    }
+}
+
+.search-full{
+    position: fixed;
+    top: 0;
+    display: flex;
+    display: none;
+    width: 100%;
+    align-items: center;
+    height: 3.5rem;
+    background-color: $white;
+    z-index: 100;
+    button,input{
+        
+        border: none;
+        outline: none;
+    }
+    .button-1{
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: transparent;
+        position: relative;
+        margin-right: 1rem;
+        .divider-vertical{
+            display: block;
+            position: absolute;
+            height: 2rem;
+            width: 1px;
+            background-color: $muted;
+            right: 0;
+            bottom: 0.75rem;
+        }
+        &:hover{
+            background-color: $danger;
+        }
+    }
+    .btn-close{
+        height: 3.5rem;
+        outline: none;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    input{
+        height: 2rem;
+        flex: auto;
+        font-weight: 300;
+        font-size: 1.1rem;
+    }
+}

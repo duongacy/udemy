@@ -15,83 +15,78 @@
         <link rel="stylesheet" href="./main.css" />
     </head>
     <body>
-        <div class="container p-5">
-            <button class="button m-2">Default button</button>
-            <button class="button button-lg m-2">Large button</button>
-            <button class="button button-red-bold m-2">Red button</button>
+        <div class="container-fluid">
+            <div class="row py-5">
+                <h2>Button</h2>
+                <div class="col-12">
+                    <button class="button m-2">Default button</button>
+                    <button class="button button-lg m-2">Large button</button>
+                    <button class="button button-red-bold m-2">
+                        Red button
+                    </button>
 
-            <button class="button button-white m-2">White button</button>
-            <button class="button button-white m-2">
-                <span class="me-2"><i class="fa fa-globe-africa"></i></span> English <span class="ms-2"><i class="fa fa-angle-up"></i></span> 
-            </button>
+                    <button class="button button-white m-2">
+                        White button
+                    </button>
+                    <button class="button button-white-light m-2">
+                        White muted button
+                    </button>
+                    <button class="button button-white m-2">
+                        <span class="me-2"
+                            ><i class="fa fa-globe-africa"></i
+                        ></span>
+                        English
+                        <span class="ms-2"><i class="fa fa-angle-up"></i></span>
+                    </button>
 
-            
-            
-            <button class="button button-sm m-2">
-                Small button
-            </button>
-            <button class="button-circle m-2">
-                <i class="fab fa-opencart"></i>
-            </button>
-            <button class="button-circle button-circle-lg button-gray m-2">
-                <i class="fab fa-opencart"></i>
-            </button>
-            <div id="cart">
-                <button class="button-circle button-circle-xl button-gray m-2" >
-                <i class="fab fa-opencart"></i>
-                <div class="cart-info">
-                    <span class="arrow"></span>
-                    <span class="transparent"></span>
-                    ahihi do ngoc
+                    <button class="button button-sm m-2">Small button</button>
+                    <button class="button-circle m-2">
+                        <i class="fab fa-opencart"></i>
+                    </button>
+                    <button
+                        class="button-circle button-circle-lg button-gray m-2"
+                    >
+                        <i class="fab fa-opencart"></i>
+                    </button>
                 </div>
-            </button>
             </div>
-            
-            <button class="button-circle button-circle-xl m-2">
-                <img class="w-100" src="./images/22869844_edad.jpg" alt="" />
-            </button>
-            
-            <form action="" class="m-2">
-                <div class="search-group">
-                    <input type="text" placeholder="Text here" />
-                    <button><i class="fas fa-search"></i></button>
+            <div class="row bg-dark py-5">
+                <h2 class="text-white">Form</h2>
+                <div class="col-6 p-2">
+                    <div class="udemy-form-control">
+                        <input
+                            type="text"
+                            placeholder="What do you want to learn?"
+                        />
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
                 </div>
-            </form>
-            <form action="" class="m-2">
-                <div class="search-group search-group-lg">
-                    <input type="text" placeholder="Text here" />
-                    <button><i class="fas fa-search"></i></button>
+                <div class="col-6 p-2">
+                    <div class="udemy-form-control udemy-form-control--lg">
+                        <input
+                            type="text"
+                            placeholder="What do you want to learn?"
+                        />
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
                 </div>
-            </form>
-            <form action="" class="m-2">
-                <div
-                    class="
-                        search-group search-group-lg search-group-muted-white
-                        rounded-5
-                    "
-                >
-                    <input type="text" placeholder="Text here" />
-                    <button><i class="fas fa-search"></i></button>
+                <div class="col-6 p-2">
+                    <div class="udemy-form-control udemy-form-control--muted">
+                        <input
+                            type="text"
+                            placeholder="What do you want to learn?"
+                        />
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
                 </div>
-            </form>
 
-            <div class="badge-accented m-2">BESTSELLER <span></span></div>
-
-            
+                <div class="col-6 p-2">
+                    
+                </div>
+            </div>
         </div>
+        
         <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script>
-            const exampleEl = document.getElementById('example');
-            console.log(exampleEl.offsetTop);
-            
-            const popover = new bootstrap.Popover(exampleEl,{
-                container: "body",
-                html:true,
-                customClass : "cart-popover",
-                // placement: 'right-start'
-            });
-            popover.show();
-            
-        </script>
+        <script src="./js/main.js"></script>
     </body>
 </html>
