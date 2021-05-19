@@ -4,6 +4,29 @@
   padding: 0;
 }
 
+.truncate-overflow {
+  max-height: 2.8rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.truncate-overflow::before {
+  content: '...';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: 0;
+}
+
+.truncate-overflow::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: white;
+}
+
 .button {
   height: 2.5rem;
   padding: 0 1rem;
@@ -331,4 +354,132 @@
 .notice-streamer .notice-streamer__item p {
   font-size: 0.875rem;
   margin: 0;
+}
+
+.skill-hubs .nav-tabs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+}
+
+.skill-hubs .nav-tabs li {
+  border-bottom: #ccc solid 1px;
+  position: relative;
+  padding: 1rem 0;
+  flex: auto;
+  max-width: 14rem;
+}
+
+.skill-hubs .nav-tabs button {
+  border: none;
+  text-align: center;
+  width: 100%;
+}
+
+.skill-hubs .nav-tabs button.active::after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #007891;
+}
+
+.skill-hubs .owl-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 30%;
+}
+
+.skill-hubs .owl-nav .owl-prev,
+.skill-hubs .owl-nav .owl-next {
+  background-color: #fff !important;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px #505764;
+  transition: all .5s;
+}
+
+.skill-hubs .owl-nav .owl-prev span,
+.skill-hubs .owl-nav .owl-next span {
+  color: transparent;
+}
+
+.skill-hubs .owl-nav .owl-prev::before,
+.skill-hubs .owl-nav .owl-next::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  display: flex;
+  color: #007891;
+  height: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+  opacity: .8;
+}
+
+.skill-hubs .owl-nav .owl-prev::before {
+  content: '\f053';
+}
+
+.skill-hubs .owl-nav .owl-prev:hover {
+  box-shadow: 2px 2px 8px #505764;
+}
+
+.skill-hubs .owl-nav .owl-prev:hover::before {
+  padding-right: .3rem;
+  opacity: 1;
+}
+
+.skill-hubs .owl-nav .owl-next::before {
+  content: '\f054';
+}
+
+.skill-hubs .owl-nav .owl-next:hover {
+  box-shadow: 2px 2px 8px #505764;
+}
+
+.skill-hubs .owl-nav .owl-next:hover::before {
+  padding-left: .3rem;
+  opacity: 1;
+}
+
+.skill-hubs .owl-nav button.disabled {
+  display: none;
+}
+
+.skill-hubs .skill-hubs__item .card {
+  box-shadow: 0 2px 3px #e8e8e8;
+  cursor: pointer;
+}
+
+.skill-hubs .skill-hubs__item .card:hover {
+  box-shadow: 0 2px 3px #505764;
+}
+
+.skill-hubs .skill-hubs__item .card .rated {
+  color: #F4C150;
+}
+
+.skill-hubs .skill-hubs__item .card .card-title-parent {
+  min-height: 3.25rem;
+}
+
+.skill-hubs .skill-hubs__item .card .card-title {
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.4rem;
+}
+
+.skill-hubs .skill-hubs__item .card small {
+  font-weight: 0.625rem;
+  font-weight: light;
 }

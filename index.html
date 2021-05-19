@@ -12,6 +12,11 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
         />
+        <link rel="stylesheet" href="./lib/owl-carousel/css/owl.carousel.css" />
+        <link
+            rel="stylesheet"
+            href="./lib/owl-carousel/css/owl.theme.default.css"
+        />
         <link rel="stylesheet" href="./main.css" />
     </head>
     <body>
@@ -138,23 +143,6 @@
 
                             <span id="append-menu-1"></span>
 
-                            <!-- <li class="nav-item">
-                                <a
-                                    class="
-                                        nav-link
-                                        show-menu-2
-                                        text-dark
-                                        fw-bold
-                                    "
-                                    show="all-categorites"
-                                    href="#"
-                                    >All categorites
-                                    <span class="ms-auto"
-                                        ><i
-                                            class="fas fa-chevron-right"
-                                        ></i></span
-                                ></a>
-                            </li> -->
                             <li class="nav-link">
                                 <hr class="divider-1" />
                             </li>
@@ -194,13 +182,19 @@
             <div class="notice-streamer__top">
                 <div class="container-fluid">
                     <div class="row px-4">
-                        <div class="col-md-6 col-lg-4">
-                            <p class="h2">Learn on your schedule</p>
-                            <p>
+                        <div class="col-md-6 col-xl-4">
+                            <h3 class="display-6 fw-normal">
+                                Learn on your schedule
+                            </h3>
+                            <p class="h5 fw-light py-3">
                                 Study any topic, anytime. Choose from thousands
                                 of expert-led courses now.
                             </p>
-                            <div class="udemy-form-control udemy-form-control--lg">
+                            <div
+                                class="
+                                    udemy-form-control udemy-form-control--lg
+                                "
+                            >
                                 <input
                                     type="text"
                                     placeholder="What do you want to learn?"
@@ -214,7 +208,14 @@
             <div class="notice-streamer__bottom d-none d-md-block">
                 <div class="container-fluid text-center">
                     <div class="row px-4">
-                        <div class="col-4 d-flex notice-streamer__item justify-content-start">
+                        <div
+                            class="
+                                col-4
+                                d-flex
+                                notice-streamer__item
+                                justify-content-start
+                            "
+                        >
                             <div class="item__icon d-none d-xl-block">
                                 <i class="fa fa-circle-notch fa-3x"></i>
                             </div>
@@ -223,7 +224,14 @@
                                 <p>Explore a variety of fresh topics</p>
                             </div>
                         </div>
-                        <div class="col-4 d-flex notice-streamer__item justify-content-center">
+                        <div
+                            class="
+                                col-4
+                                d-flex
+                                notice-streamer__item
+                                justify-content-center
+                            "
+                        >
                             <div class="item__icon d-none d-xl-block">
                                 <i class="fa fa-handshake fa-3x"></i>
                             </div>
@@ -232,7 +240,14 @@
                                 <p>Find the right instructor for you</p>
                             </div>
                         </div>
-                        <div class="col-4 d-flex notice-streamer__item justify-content-end">
+                        <div
+                            class="
+                                col-4
+                                d-flex
+                                notice-streamer__item
+                                justify-content-end
+                            "
+                        >
                             <div class="item__icon d-none d-xl-block">
                                 <i class="fa fa-hourglass-half fa-3x"></i>
                             </div>
@@ -245,7 +260,2417 @@
                 </div>
             </div>
         </section>
-        <section class="skill-hubs"></section>
+        <section class="skill-hubs">
+            <div class="container py-4">
+                <ul class="nav nav-tabs" id="skillHubs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link active"
+                            id="skill-hubs-business-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#skill-hubs-business"
+                            type="button"
+                            role="tab"
+                            aria-controls="skill-hubs-business"
+                            aria-selected="true"
+                        >
+                            Business
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link"
+                            id="skill-hub-designs-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#skill-hub-designs"
+                            type="button"
+                            role="tab"
+                            aria-controls="skill-hub-designs"
+                            aria-selected="false"
+                        >
+                            Designs
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link"
+                            id="skill-hubs-photography-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#skill-hubs-photography"
+                            type="button"
+                            role="tab"
+                            aria-controls="skill-hubs-photography"
+                            aria-selected="false"
+                        >
+                            Photography
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link"
+                            id="skill-hubs-development-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#skill-hubs-development"
+                            type="button"
+                            role="tab"
+                            aria-controls="skill-hubs-development"
+                            aria-selected="false"
+                        >
+                            Development
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link"
+                            id="skill-hubs-marketing-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#skill-hubs-marketing"
+                            type="button"
+                            role="tab"
+                            aria-controls="skill-hubs-marketing"
+                            aria-selected="false"
+                        >
+                            Marketing
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link"
+                            id="skill-hubs-it-software-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#skill-hubs-it-software"
+                            type="button"
+                            role="tab"
+                            aria-controls="skill-hubs-it-software"
+                            aria-selected="false"
+                        >
+                            IT & Software
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link"
+                            id="skill-hubs-personal-development-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#skill-hubs-personal-development"
+                            type="button"
+                            role="tab"
+                            aria-controls="skill-hubs-personal-development"
+                            aria-selected="false"
+                        >
+                            Personal Development
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content py-2" id="skillHubsContent">
+                    <div
+                        class="tab-pane fade show active"
+                        id="skill-hubs-business"
+                        role="tabpanel"
+                        aria-labelledby="skill-hubs-business-tab"
+                    >
+                        <div class="skill-hubs__carousel owl-carousel">
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/1.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <div class="card-title-parent">
+                                            <h6
+                                                class="
+                                                    card-title
+                                                    truncate-overflow
+                                                "
+                                            >
+                                                Beginner to Pro in Excel:
+                                                Financial Modeling and Valuation
+                                            </h6>
+                                        </div>
+
+                                        <p class="text-truncate">
+                                            <small
+                                                >Manuel Lorenz, Academind by
+                                                Maximilian</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(17,931)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $134.99</small
+                                            >
+                                            <span class="fw-bold">$15.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/2.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            Forex Trading A-Z™ - With LIVE
+                                            Examples of Forex Trading
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >Kirill Eremenko, ForexBoat
+                                                Team</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(16,430)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $134.99</small
+                                            >
+                                            <span class="fw-bold">$15.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/3.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <div class="card-title-parent">
+                                            <h6
+                                                class="
+                                                    card-title
+                                                    truncate-overflow
+                                                "
+                                            >
+                                                Business Analysis Fundamentals
+                                            </h6>
+                                        </div>
+
+                                        <p class="text-truncate">
+                                            <small
+                                                >The BA Guide | Jeremy
+                                                Aschenbrenner</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(22,317)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $150.99</small
+                                            >
+                                            <span class="fw-bold">$94.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/4.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            Tableau 20 Advanced Training: Master
+                                            Tableau in Data Science
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >Kirill Eremenko,
+                                                SuperDataScience Team</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.7</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(10,650)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $100.99</small
+                                            >
+                                            <span class="fw-bold">$12.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/5.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            SQL for Data Analysis: Weekender
+                                            Crash Course for Beginners
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >A Course You'll Actually
+                                                Finish, David Kim, Peter
+                                                Sefton</small
+                                            >
+                                        </p>
+
+                                        <p class="">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.4</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(21,822)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $120.99</small
+                                            >
+                                            <span class="fw-bold">$18,99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/6.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            eBay Drop Shipping Guide with No
+                                            Inventory - Work From Home
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small>David Vu</small>
+                                        </p>
+
+                                        <p class="">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(12,931)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $199.99</small
+                                            >
+                                            <span class="fw-bold">$12.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="tab-pane fade"
+                        id="skill-hub-designs"
+                        role="tabpanel"
+                        aria-labelledby="skill-hub-designs-tab"
+                    >
+                        <div
+                            class="
+                                skill-hubs__carousel
+                                design__carousel
+                                owl-carousel owl-carousel-2
+                            "
+                            id=""
+                        >
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/1.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            Beginner to Pro in Excel: Financial
+                                            Modeling and Valuation
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >Manuel Lorenz, Academind by
+                                                Maximilian</small
+                                            >
+                                        </p>
+
+                                        <p class="">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(17,931)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $134.99</small
+                                            >
+                                            <span class="fw-bold">$15.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/2.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            Forex Trading A-Z™ - With LIVE
+                                            Examples of Forex Trading
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >Kirill Eremenko, ForexBoat
+                                                Team</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(16,430)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $134.99</small
+                                            >
+                                            <span class="fw-bold">$15.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/3.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            Business Analysis Fundamentals
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >The BA Guide | Jeremy
+                                                Aschenbrenner</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(22,317)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $150.99</small
+                                            >
+                                            <span class="fw-bold">$94.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/4.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            Tableau 20 Advanced Training: Master
+                                            Tableau in Data Science
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >Kirill Eremenko,
+                                                SuperDataScience Team</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.7</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(10,650)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $100.99</small
+                                            >
+                                            <span class="fw-bold">$12.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/5.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            SQL for Data Analysis: Weekender
+                                            Crash Course for Beginners
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >A Course You'll Actually
+                                                Finish, David Kim, Peter
+                                                Sefton</small
+                                            >
+                                        </p>
+
+                                        <p class="">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.4</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(21,822)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $120.99</small
+                                            >
+                                            <span class="fw-bold">$18,99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/6.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            eBay Drop Shipping Guide with No
+                                            Inventory - Work From Home
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small>David Vu</small>
+                                        </p>
+
+                                        <p class="">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(12,931)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $199.99</small
+                                            >
+                                            <span class="fw-bold">$12.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="tab-pane fade"
+                        id="skill-hubs-photography"
+                        role="tabpanel"
+                        aria-labelledby="skill-hubs-photography-tab"
+                    >
+                        <div class="skill-hubs__carousel owl-carousel">
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/1.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <div class="card-title-parent">
+                                            <h6
+                                                class="
+                                                    card-title
+                                                    truncate-overflow
+                                                "
+                                            >
+                                                Beginner to Pro in Excel:
+                                                Financial Modeling and Valuation
+                                            </h6>
+                                        </div>
+
+                                        <p class="text-truncate">
+                                            <small
+                                                >Manuel Lorenz, Academind by
+                                                Maximilian</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(17,931)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $134.99</small
+                                            >
+                                            <span class="fw-bold">$15.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/2.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            Forex Trading A-Z™ - With LIVE
+                                            Examples of Forex Trading
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >Kirill Eremenko, ForexBoat
+                                                Team</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(16,430)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $134.99</small
+                                            >
+                                            <span class="fw-bold">$15.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/3.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <div class="card-title-parent">
+                                            <h6
+                                                class="
+                                                    card-title
+                                                    truncate-overflow
+                                                "
+                                            >
+                                                Business Analysis Fundamentals
+                                            </h6>
+                                        </div>
+
+                                        <p class="text-truncate">
+                                            <small
+                                                >The BA Guide | Jeremy
+                                                Aschenbrenner</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(22,317)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $150.99</small
+                                            >
+                                            <span class="fw-bold">$94.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/4.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            Tableau 20 Advanced Training: Master
+                                            Tableau in Data Science
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >Kirill Eremenko,
+                                                SuperDataScience Team</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.7</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(10,650)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $100.99</small
+                                            >
+                                            <span class="fw-bold">$12.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/5.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            SQL for Data Analysis: Weekender
+                                            Crash Course for Beginners
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >A Course You'll Actually
+                                                Finish, David Kim, Peter
+                                                Sefton</small
+                                            >
+                                        </p>
+
+                                        <p class="">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.4</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(21,822)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $120.99</small
+                                            >
+                                            <span class="fw-bold">$18,99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/6.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            eBay Drop Shipping Guide with No
+                                            Inventory - Work From Home
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small>David Vu</small>
+                                        </p>
+
+                                        <p class="">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(12,931)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $199.99</small
+                                            >
+                                            <span class="fw-bold">$12.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="tab-pane fade"
+                        id="skill-hubs-development"
+                        role="tabpanel"
+                        aria-labelledby="skill-hubs-development-tab"
+                    >
+                        <div class="skill-hubs__carousel owl-carousel">
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/1.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <div class="card-title-parent">
+                                            <h6
+                                                class="
+                                                    card-title
+                                                    truncate-overflow
+                                                "
+                                            >
+                                                Beginner to Pro in Excel:
+                                                Financial Modeling and Valuation
+                                            </h6>
+                                        </div>
+
+                                        <p class="text-truncate">
+                                            <small
+                                                >Manuel Lorenz, Academind by
+                                                Maximilian</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(17,931)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $134.99</small
+                                            >
+                                            <span class="fw-bold">$15.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/2.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            Forex Trading A-Z™ - With LIVE
+                                            Examples of Forex Trading
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >Kirill Eremenko, ForexBoat
+                                                Team</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(16,430)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $134.99</small
+                                            >
+                                            <span class="fw-bold">$15.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/3.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <div class="card-title-parent">
+                                            <h6
+                                                class="
+                                                    card-title
+                                                    truncate-overflow
+                                                "
+                                            >
+                                                Business Analysis Fundamentals
+                                            </h6>
+                                        </div>
+
+                                        <p class="text-truncate">
+                                            <small
+                                                >The BA Guide | Jeremy
+                                                Aschenbrenner</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(22,317)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $150.99</small
+                                            >
+                                            <span class="fw-bold">$94.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/4.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            Tableau 20 Advanced Training: Master
+                                            Tableau in Data Science
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >Kirill Eremenko,
+                                                SuperDataScience Team</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.7</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(10,650)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $100.99</small
+                                            >
+                                            <span class="fw-bold">$12.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/5.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            SQL for Data Analysis: Weekender
+                                            Crash Course for Beginners
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >A Course You'll Actually
+                                                Finish, David Kim, Peter
+                                                Sefton</small
+                                            >
+                                        </p>
+
+                                        <p class="">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.4</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(21,822)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $120.99</small
+                                            >
+                                            <span class="fw-bold">$18,99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/6.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            eBay Drop Shipping Guide with No
+                                            Inventory - Work From Home
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small>David Vu</small>
+                                        </p>
+
+                                        <p class="">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(12,931)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $199.99</small
+                                            >
+                                            <span class="fw-bold">$12.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="tab-pane fade"
+                        id="skill-hubs-marketing"
+                        role="tabpanel"
+                        aria-labelledby="skill-hubs-marketing-tab"
+                    >
+                        <div class="skill-hubs__carousel owl-carousel">
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/1.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <div class="card-title-parent">
+                                            <h6
+                                                class="
+                                                    card-title
+                                                    truncate-overflow
+                                                "
+                                            >
+                                                Beginner to Pro in Excel:
+                                                Financial Modeling and Valuation
+                                            </h6>
+                                        </div>
+
+                                        <p class="text-truncate">
+                                            <small
+                                                >Manuel Lorenz, Academind by
+                                                Maximilian</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(17,931)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $134.99</small
+                                            >
+                                            <span class="fw-bold">$15.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/2.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            Forex Trading A-Z™ - With LIVE
+                                            Examples of Forex Trading
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >Kirill Eremenko, ForexBoat
+                                                Team</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(16,430)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $134.99</small
+                                            >
+                                            <span class="fw-bold">$15.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/3.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <div class="card-title-parent">
+                                            <h6
+                                                class="
+                                                    card-title
+                                                    truncate-overflow
+                                                "
+                                            >
+                                                Business Analysis Fundamentals
+                                            </h6>
+                                        </div>
+
+                                        <p class="text-truncate">
+                                            <small
+                                                >The BA Guide | Jeremy
+                                                Aschenbrenner</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(22,317)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $150.99</small
+                                            >
+                                            <span class="fw-bold">$94.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/4.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            Tableau 20 Advanced Training: Master
+                                            Tableau in Data Science
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >Kirill Eremenko,
+                                                SuperDataScience Team</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.7</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(10,650)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $100.99</small
+                                            >
+                                            <span class="fw-bold">$12.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/5.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            SQL for Data Analysis: Weekender
+                                            Crash Course for Beginners
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >A Course You'll Actually
+                                                Finish, David Kim, Peter
+                                                Sefton</small
+                                            >
+                                        </p>
+
+                                        <p class="">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.4</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(21,822)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $120.99</small
+                                            >
+                                            <span class="fw-bold">$18,99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/6.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            eBay Drop Shipping Guide with No
+                                            Inventory - Work From Home
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small>David Vu</small>
+                                        </p>
+
+                                        <p class="">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(12,931)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $199.99</small
+                                            >
+                                            <span class="fw-bold">$12.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="tab-pane fade"
+                        id="skill-hubs-it-software"
+                        role="tabpanel"
+                        aria-labelledby="skill-hubs-it-software-tab"
+                    >
+                        <div class="skill-hubs__carousel owl-carousel">
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/1.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <div class="card-title-parent">
+                                            <h6
+                                                class="
+                                                    card-title
+                                                    truncate-overflow
+                                                "
+                                            >
+                                                Beginner to Pro in Excel:
+                                                Financial Modeling and Valuation
+                                            </h6>
+                                        </div>
+
+                                        <p class="text-truncate">
+                                            <small
+                                                >Manuel Lorenz, Academind by
+                                                Maximilian</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(17,931)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $134.99</small
+                                            >
+                                            <span class="fw-bold">$15.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/2.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            Forex Trading A-Z™ - With LIVE
+                                            Examples of Forex Trading
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >Kirill Eremenko, ForexBoat
+                                                Team</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(16,430)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $134.99</small
+                                            >
+                                            <span class="fw-bold">$15.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/3.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <div class="card-title-parent">
+                                            <h6
+                                                class="
+                                                    card-title
+                                                    truncate-overflow
+                                                "
+                                            >
+                                                Business Analysis Fundamentals
+                                            </h6>
+                                        </div>
+
+                                        <p class="text-truncate">
+                                            <small
+                                                >The BA Guide | Jeremy
+                                                Aschenbrenner</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(22,317)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $150.99</small
+                                            >
+                                            <span class="fw-bold">$94.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/4.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            Tableau 20 Advanced Training: Master
+                                            Tableau in Data Science
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >Kirill Eremenko,
+                                                SuperDataScience Team</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.7</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(10,650)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $100.99</small
+                                            >
+                                            <span class="fw-bold">$12.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/5.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            SQL for Data Analysis: Weekender
+                                            Crash Course for Beginners
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >A Course You'll Actually
+                                                Finish, David Kim, Peter
+                                                Sefton</small
+                                            >
+                                        </p>
+
+                                        <p class="">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.4</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(21,822)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $120.99</small
+                                            >
+                                            <span class="fw-bold">$18,99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/6.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            eBay Drop Shipping Guide with No
+                                            Inventory - Work From Home
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small>David Vu</small>
+                                        </p>
+
+                                        <p class="">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(12,931)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $199.99</small
+                                            >
+                                            <span class="fw-bold">$12.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="tab-pane fade"
+                        id="skill-hubs-personal-development"
+                        role="tabpanel"
+                        aria-labelledby="skill-hubs-personal-development-tab"
+                    >
+                        <div class="skill-hubs__carousel owl-carousel">
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/1.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <div class="card-title-parent">
+                                            <h6
+                                                class="
+                                                    card-title
+                                                    truncate-overflow
+                                                "
+                                            >
+                                                Beginner to Pro in Excel:
+                                                Financial Modeling and Valuation
+                                            </h6>
+                                        </div>
+
+                                        <p class="text-truncate">
+                                            <small
+                                                >Manuel Lorenz, Academind by
+                                                Maximilian</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(17,931)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $134.99</small
+                                            >
+                                            <span class="fw-bold">$15.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/2.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            Forex Trading A-Z™ - With LIVE
+                                            Examples of Forex Trading
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >Kirill Eremenko, ForexBoat
+                                                Team</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(16,430)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $134.99</small
+                                            >
+                                            <span class="fw-bold">$15.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/3.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <div class="card-title-parent">
+                                            <h6
+                                                class="
+                                                    card-title
+                                                    truncate-overflow
+                                                "
+                                            >
+                                                Business Analysis Fundamentals
+                                            </h6>
+                                        </div>
+
+                                        <p class="text-truncate">
+                                            <small
+                                                >The BA Guide | Jeremy
+                                                Aschenbrenner</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(22,317)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $150.99</small
+                                            >
+                                            <span class="fw-bold">$94.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/4.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            Tableau 20 Advanced Training: Master
+                                            Tableau in Data Science
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >Kirill Eremenko,
+                                                SuperDataScience Team</small
+                                            >
+                                        </p>
+
+                                        <p class="text-truncate">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.7</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(10,650)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $100.99</small
+                                            >
+                                            <span class="fw-bold">$12.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/5.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            SQL for Data Analysis: Weekender
+                                            Crash Course for Beginners
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small
+                                                >A Course You'll Actually
+                                                Finish, David Kim, Peter
+                                                Sefton</small
+                                            >
+                                        </p>
+
+                                        <p class="">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.4</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(21,822)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $120.99</small
+                                            >
+                                            <span class="fw-bold">$18,99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-hubs__item">
+                                <div class="card m-2 rounded-0 border-0">
+                                    <img
+                                        src="./images/6.jpg"
+                                        class="w-100"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title truncate-overflow"
+                                        >
+                                            eBay Drop Shipping Guide with No
+                                            Inventory - Work From Home
+                                        </h6>
+                                        <p class="text-truncate">
+                                            <small>David Vu</small>
+                                        </p>
+
+                                        <p class="">
+                                            <small>
+                                                <span class="me-2 rated"
+                                                    ><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i
+                                                ></span>
+                                                <span class="fw-bold">4.5</span>
+                                                <span
+                                                    class="text-muted fw-light"
+                                                    >(12,931)</span
+                                                >
+                                            </small>
+                                        </p>
+                                        <p class="text-end m-0">
+                                            <small
+                                                class="
+                                                    text-decoration-line-through
+                                                    fw-light
+                                                    text-muted
+                                                "
+                                            >
+                                                $199.99</small
+                                            >
+                                            <span class="fw-bold">$12.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="value-props"></section>
         <section class="course-discovery"></section>
         <section class="udemy-components"></section>
@@ -253,7 +2678,37 @@
         <section class="testominals"></section>
         <section class="partners"></section>
         <section class="non-student"></section>
+
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
         <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="./lib/owl-carousel/js/owl.carousel.js"></script>
+        <script>
+            $('.skill-hubs__carousel').owlCarousel({
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true,
+                    },
+                    576: {
+                        items: 2,
+                        nav: false,
+                    },
+                    768: {
+                        items: 3,
+                        nav: false,
+                    },
+                    992: {
+                        items: 5,
+                        nav: true,
+                        loop: false,
+                    },
+                },
+            });
+        </script>
         <script src="./js/menu.js"></script>
         <script src="./js/main.js"></script>
     </body>

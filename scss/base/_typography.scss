@@ -1,0 +1,23 @@
+$lh: 1.4rem;
+
+.truncate-overflow {
+    $max-lines: 2;
+    max-height: $lh * $max-lines;
+    overflow: hidden;
+    position: relative;
+}
+.truncate-overflow::before {
+    content: '...';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+}
+.truncate-overflow::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1.4rem;
+    height: 1.4rem;
+    background: white;
+}
