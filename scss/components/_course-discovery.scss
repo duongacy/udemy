@@ -1,36 +1,4 @@
-.skill-hubs {
-    .nav-tabs {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        border: none;
-        li {
-            border-bottom: #ccc solid 1px;
-            position: relative;
-            padding: 1rem 0;
-            flex: auto;
-            max-width: 14rem;
-        }
-        button {
-            border: none;
-            text-align: center;
-            width: 100%;
-            font-size: .875rem;
-            font-weight: bold;
-            &.active {
-                &::after {
-                    content: '';
-                    position: absolute;
-                    display: block;
-                    left: 0;
-                    bottom: 0;
-                    width: 100%;
-                    height: 5px;
-                    background-color: $primary;
-                }
-            }
-        }
-    }
+.course-discovery{
     .owl-nav {
         display: flex;
         justify-content: space-between;
@@ -93,7 +61,7 @@
         }
     }
 
-    .skill-hubs__item {
+    .course-discovery__item {
         .card {
             box-shadow: 0 2px 3px $muted;
             cursor: pointer;
