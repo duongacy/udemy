@@ -110,6 +110,7 @@
   overflow: hidden;
   width: 3.5rem;
   height: 3.5rem;
+  background-color: #686f7a;
 }
 
 .button-avatar img {
@@ -222,13 +223,14 @@
   font-size: 1.1rem;
 }
 
-.overlay--mobile-show {
+#overlay--mobile-show {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(80, 87, 100, 0.1);
+  display: none;
+  background-color: rgba(80, 87, 100, 0.5);
 }
 
 #header .navbar-toggler {
@@ -247,6 +249,7 @@
 
 #header .menu-custom {
   z-index: 10;
+  overflow: hidden;
   transition: .5s;
 }
 
@@ -334,6 +337,15 @@
 #header .toggler-div a {
   color: #505764;
   cursor: pointer;
+}
+
+footer .nav-link {
+  color: #007891;
+  font-size: 0.875rem;
+}
+
+footer .nav-link.active {
+  font-weight: bold;
 }
 
 .notice-streamer {

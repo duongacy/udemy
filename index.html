@@ -263,13 +263,14 @@
         <section class="skill-hubs">
             <div class="container py-4">
                 <div class="row">
-                    <div class="col-lg-4 p-2">
+                    <div class="d-none d-lg-flex col-lg-4 p-2">
                         <div
                             class="
                                 bg-light
                                 w-100
                                 h-100
                                 px-5
+                                
                                 d-flex
                                 flex-column
                                 justify-content-center
@@ -982,7 +983,7 @@
                                                     >
                                                 </p>
 
-                                                <p class="">
+                                                <p class="text-truncate">
                                                     <small>
                                                         <span class="me-2 rated"
                                                             ><i
@@ -4698,7 +4699,7 @@
         </section>
         <section class="udemy-components text-white bg-dark">
             <div class="red-line"></div>
-            <div class="udemy-components__icons">
+            <div class="udemy-components__icons d-none d-lg-flex">
                 <div class="icon"><i class="fa fa-film"></i></div>
                 <div class="icon"><i class="fa fa-user-graduate"></i></div>
                 <div class="icon"><i class="fa fa-balance-scale"></i></div>
@@ -4713,8 +4714,8 @@
                     text-center
                 "
             >
-                <div class="icon"><i class="fa fa-landmark"></i></div>
-                <div class="">
+                <div class="icon d-none d-lg-block"><i class="fa fa-landmark"></i></div>
+                <div class="p-5">
                     <h4 class="fw-bold">Get personalized recommendations</h4>
                     <p>
                         <small>Answer a few questions for your top picks</small>
@@ -4723,9 +4724,9 @@
                         Get started
                     </button>
                 </div>
-                <div class="icon"><i class="fa fa-envelope-open-text"></i></div>
+                <div class="icon  d-none d-lg-block"><i class="fa fa-envelope-open-text"></i></div>
             </div>
-            <div class="udemy-components__icons">
+            <div class="udemy-components__icons d-none d-lg-flex">
                 <div class="icon"><i class="fa fa-link"></i></div>
                 <div class="icon"><i class="fab fa-teamspeak"></i></div>
                 <div class="icon"><i class="fa fa-campground"></i></div>
@@ -4802,7 +4803,7 @@
                 </div>
             </div>
         </section>
-        <section class="testominals bg-light">
+        <section class="testominals bg-light border-bottom">
             <div class="container py-4">
                 <h4 class="mb-3 fw-bold">What our students have to say</h4>
                 <div class="row owl-carousel testominals__carousel">
@@ -4861,7 +4862,6 @@
                                         button-circle
                                         button-circle-lg
                                         button-avatar
-                                        bg-dark
                                         text-white
                                         fw-bold
                                     "
@@ -4907,7 +4907,9 @@
                     </div>
                 </div>
                 <div class="row py-4 testominals__invite">
-                    <div class="col-md-6 text-center text-secondary invite__item">
+                    <div
+                        class="col-md-6 text-center text-secondary invite__item"
+                    >
                         <h5 class="fw-bold">Become an instructor</h5>
                         <p>
                             Top instructors from around the world teach millions
@@ -4920,7 +4922,9 @@
                     </div>
                     <span class="vertical-divider d-none d-md-block"></span>
                     <div class="dropdown-divider d-md-none"></div>
-                    <div class="col-md-6 text-center text-secondary invite__item">
+                    <div
+                        class="col-md-6 text-center text-secondary invite__item"
+                    >
                         <h5 class="fw-bold">Udemy for Business</h5>
                         <p>
                             Get unlimited access to 4,000+ of Udemy’s top
@@ -4933,7 +4937,83 @@
                 </div>
             </div>
         </section>
-        <footer></footer>
+        <footer>
+            <div class="footer__menu border-bottom">
+                <div class="container-fluid">
+                    <div class="row py-4">
+                        <div class="col-lg-3 d-none d-lg-block">
+                            <nav class="nav flex-column footer__nav">
+                                <a class="nav-link active" href="#"
+                                    >Udemy for Business</a
+                                >
+                                <a class="nav-link active" href="#"
+                                    >Teach on Udemy</a
+                                >
+                                <a class="nav-link" href="#">Udemy app</a>
+                                <a class="nav-link" href="#">About us</a>
+                            </nav>
+                        </div>
+                        <div class="col-lg-3 d-none d-lg-block">
+                            <nav class="nav flex-column footer__nav">
+                                <a class="nav-link" href="#">Contact us</a>
+                                <a class="nav-link" href="#">Careers</a>
+                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link" href="#"
+                                    >Help and Support</a
+                                >
+                            </nav>
+                        </div>
+                        <div class="col-lg-3 d-none d-lg-block">
+                            <nav class="nav flex-column footer__nav">
+                                <a class="nav-link" href="#">Affiliate</a>
+                                <a class="nav-link" href="#">Sitemap</a>
+                                <a class="nav-link" href="#"
+                                    >Featured courses</a
+                                >
+                            </nav>
+                        </div>
+                        <div class="col-lg-3 text-center text-lg-end">
+                            <button class="button button-white m-3">
+                                <span class="me-2"
+                                    ><i class="fa fa-globe-africa"></i
+                                ></span>
+                                English
+                                <span class="ms-2"
+                                    ><i class="fa fa-angle-up"></i
+                                ></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-4 footer__bottom">
+                <div class="container-fluid">
+                    <div class="row px-3 g-3">
+                        <div class="col-md-6 text-center text-md-start">
+                            <a class="navbar-brand" href="#">
+                                <img
+                                    src="./images/logo-coral.svg"
+                                    height="32px"
+                                    alt=""
+                                />
+                            </a>
+                            <small class="text-secondary fw-light"
+                                >Copyright © 2020 Udemy, Inc.</small
+                            >
+                        </div>
+                        <div class="col-md-6 ">
+                            <ul class="nav justify-content-center justify-content-lg-end">
+                                <li class="nav-item">
+                                  <a class="nav-link ps-0" href="#">Terms</a>
+                                </li>
+                                <li class="nav-item ps-0">
+                                  <a class="nav-link" href="#">Privacy Policy and Cookie Policy</a>
+                                </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <script
             src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -4964,6 +5044,7 @@
             });
             $('.value-props__carousel').owlCarousel({
                 margin: 16,
+                dots:false,
                 responsive: {
                     0: {
                         items: 1,

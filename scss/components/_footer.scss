@@ -1,0 +1,13 @@
+footer {
+    .footer__nav {
+        // max-width: 15rem;
+    }
+    .nav-link {
+        color: $primary;
+
+        font-size: 0.875rem;
+        &.active {
+            font-weight: bold;
+        }
+    }
+}

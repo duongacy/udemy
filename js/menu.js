@@ -517,7 +517,6 @@ function addEventOpenMenu() {
     toggle.addEventListener('click', function (e) {
         let menu2 = $q("#menu-2");
         menu2.style.left = 0;
-
         $q("#overlay--mobile-show").style.display="block";
     })
 }
