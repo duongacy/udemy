@@ -1,0 +1,18 @@
+.top-categories{
+    .top-categories__item{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        // border: #ccc solid 1px;
+        padding: 1.5rem;
+        box-shadow: 0 1px 4px $dark;
+        font-weight: $fw-1;
+        .icon{
+            font-size: 1.5rem;
+        }
+        &:hover{
+            box-shadow: 0 1px 7px $dark;
+        }
+    }
+}

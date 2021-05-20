@@ -625,3 +625,21 @@
 .udemy-components .icon {
   font-size: 1.5rem;
 }
+
+.top-categories .top-categories__item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 4px #505764;
+  font-weight: 300;
+}
+
+.top-categories .top-categories__item .icon {
+  font-size: 1.5rem;
+}
+
+.top-categories .top-categories__item:hover {
+  box-shadow: 0 1px 7px #505764;
+}
