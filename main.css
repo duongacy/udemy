@@ -376,6 +376,8 @@
   border: none;
   text-align: center;
   width: 100%;
+  font-size: .875rem;
+  font-weight: bold;
 }
 
 .skill-hubs .nav-tabs button.active::after {
@@ -483,4 +485,30 @@
 .skill-hubs .skill-hubs__item .card small {
   font-weight: 0.625rem;
   font-weight: light;
+}
+
+.value-props {
+  padding: 3rem 0;
+}
+
+.value-props .value-props__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.value-props .value-props__item .item__icon {
+  min-height: 4rem;
+  justify-content: center;
+}
+
+.value-props .value-props__item .item__icon img {
+  width: 3rem;
+}
+
+.value-props .owl-dots {
+  padding-top: 1rem;
 }
