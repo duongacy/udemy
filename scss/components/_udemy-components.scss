@@ -1,8 +1,5 @@
 .udemy-components{
-    .red-line{
-        height: .4rem;
-        background-color: $danger;
-    }
+    
     .udemy-components__icons{
         display: flex;
         min-height: 8rem;
@@ -13,4 +10,8 @@
     .icon{
         font-size: 1.5rem;
     }
+}
+.red-line{
+    height: .4rem;
+    background-color: $danger;
 }

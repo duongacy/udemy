@@ -632,11 +632,6 @@ footer .nav-link.active {
   font-weight: light;
 }
 
-.udemy-components .red-line {
-  height: .4rem;
-  background-color: #ec5352;
-}
-
 .udemy-components .udemy-components__icons {
   display: flex;
   min-height: 8rem;
@@ -647,6 +642,11 @@ footer .nav-link.active {
 
 .udemy-components .icon {
   font-size: 1.5rem;
+}
+
+.red-line {
+  height: .4rem;
+  background-color: #ec5352;
 }
 
 .top-categories .top-categories__item {
