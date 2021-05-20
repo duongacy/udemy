@@ -55,7 +55,7 @@
 
 .button-red-bold {
   color: #fff;
-  background-color: red;
+  background-color: #ec5352;
   border-color: transparent;
 }
 
@@ -607,4 +607,21 @@
 .course-discovery .course-discovery__item .card small {
   font-weight: 0.625rem;
   font-weight: light;
+}
+
+.udemy-components .red-line {
+  height: .4rem;
+  background-color: #ec5352;
+}
+
+.udemy-components .udemy-components__icons {
+  display: flex;
+  min-height: 8rem;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.udemy-components .icon {
+  font-size: 1.5rem;
 }
